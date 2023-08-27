@@ -14,7 +14,7 @@ export default function IndexLink(props: Props) {
 
     React.useEffect(() => {
         setIsDark(colorMode.isDarkTheme);
-    }, [colorMode]);
+    }, [colorMode, colorMode.isDarkTheme]);
 
     return (
         <Link
