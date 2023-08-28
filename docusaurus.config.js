@@ -68,6 +68,12 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
+            algolia: {
+                appId: "8U9UZ3Q41I",
+                apiKey: "010417be3c56508cba6c47e8de3a819d",
+                indexName: "venturerp",
+                contextualSearch: true,
+            },
         }),
     plugins: [
         async function tailwind(context, options) {
