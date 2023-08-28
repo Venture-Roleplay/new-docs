@@ -41,16 +41,6 @@ const config = {
         ],
     ],
 
-    themes: [
-        [
-            /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-            require.resolve("@easyops-cn/docusaurus-search-local"),
-            {
-                hashed: false,
-            },
-        ],
-    ],
-
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
@@ -90,6 +80,7 @@ const config = {
                 },
             };
         },
+        require.resolve("@cmfcmf/docusaurus-search-local"),
     ],
 };
 
