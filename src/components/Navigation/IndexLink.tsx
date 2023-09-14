@@ -27,13 +27,7 @@ export default function IndexLink(props: Props) {
                 color,
             }}
         >
-            <span
-            // className={
-            //     colorMode.isDarkTheme ? "text-white" : "text-zinc-600"
-            // }
-            >
-                {props.title}
-            </span>
+            <span>{props.title}</span>
             {props.description && (
                 <span className="text-sm font-normal">{props.description}</span>
             )}
