@@ -46,6 +46,9 @@ const config = {
         ({
             navbar: {
                 title: "Venture RP Documentation",
+                logo: {
+                    src: "img/logo/logo-512x512.png",
+                },
                 items: [
                     {
                         type: "docSidebar",
@@ -73,6 +76,11 @@ const config = {
                 apiKey: "010417be3c56508cba6c47e8de3a819d",
                 indexName: "venturerp",
                 contextualSearch: true,
+            },
+            docs: {
+                sidebar: {
+                    autoCollapseCategories: true,
+                },
             },
         }),
     plugins: [
