@@ -54,9 +54,15 @@ const config = {
                         label: "Docs",
                     },
                     { to: "/blog", label: "Blog", position: "left" },
+                    { to: "/changelog", label: "Changelog", position: "left" },
                     {
                         label: "Discord",
                         href: "https://dsc.gg/venturerp",
+                        position: "right",
+                    },
+                    {
+                        label: "Website",
+                        href: "https://venturerp.xyz",
                         position: "right",
                     },
                 ],
@@ -74,6 +80,14 @@ const config = {
                 indexName: "venturerp",
                 contextualSearch: true,
             },
+            colorMode: {
+                defaultMode: "dark",
+            },
+            announcementBar: {
+                content:
+                    "Applications are now open! <a href='https://lnk.venturerp.xyz/apply' target='_blank'>Apply now!</a>",
+                id: "apps-open",
+            },
         }),
     plugins: [
         async function tailwind(context, options) {
@@ -86,6 +100,14 @@ const config = {
                 },
             };
         },
+        [
+            "@docusaurus/plugin-content-blog",
+            {
+                id: "changelog",
+                routeBasePath: "changelog",
+                path: "./changelog",
+            },
+        ],
     ],
 };
 
